@@ -1,3 +1,3 @@
-const hashGenerator = require('./hashGenerator');
+const { generateHash } = require('./utils');
 
-console.log(hashGenerator(40));
+console.log(generateHash(40));

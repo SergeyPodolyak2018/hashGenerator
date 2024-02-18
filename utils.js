@@ -25,7 +25,7 @@ function symbolGenerator() {
   return String.fromCharCode(code);
 }
 
-function hashGenerator(quantity) {
+function generateHash(quantity) {
   let bufer = '';
   for (let i = 0; i < quantity; i++) {
     bufer = bufer + symbolGenerator();
@@ -33,4 +33,4 @@ function hashGenerator(quantity) {
   return bufer;
 }
 
-module.exports = hashGenerator;
+module.exports = { generateHash };
